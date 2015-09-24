@@ -1,0 +1,14 @@
+<br>
+<form class="tag-form" action="<%= tags_url %>" method="POST">
+  <%= auth_token %>
+  <label>Tag:
+    <input type="text" name="tag[tag_name]">
+  </label>
+  <input type="submit" value="Search">
+</form>
+
+<script>
+  $(document).ready(function () {
+    initialize();
+  });
+</script>
